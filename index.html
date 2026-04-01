@@ -99,6 +99,62 @@
             margin-bottom: 20px;
             color: #ffd700;
         }
+
+        .dishes-section {
+            background: linear-gradient(135deg, #000080 0%, #e41e3f 100%);
+            padding: 60px 40px;
+            color: white;
+            min-height: auto;
+        }
+
+        .dishes-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .dishes-section h2 {
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .dish-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .dish-image {
+            text-align: center;
+        }
+
+        .dish-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .dish-info h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .dish-info p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .dish-card {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -148,5 +204,22 @@
             </div>
         </div>
     </div>
-</body>
+
+    <!-- Dishes Section -->
+    <div class="dishes-section">
+        <div class="dishes-container">
+            <h2>🍽️ Piatti Tipici Albanesi</h2>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Byrek_Tirane_-_Kosovar_Burek.jpg/800px-Byrek_Tirane_-_Kosovar_Burek.jpg" alt="Byrek - Piatto Tipico Albanese">
+                </div>
+                <div class="dish-info">
+                    <h3>Byrek 🥐</h3>
+                    <p><strong>Il Byrek</strong> è uno dei piatti più rappresentativi della cucina albanese. Si tratta di un involtino sfoglia ripieno di carne macinata, spinaci, formaggio o patate.</p>
+                    <p>È un piatto molto versatile che viene consumato in varie occasioni, dal colazione al pranzo, e rappresenta l'eredità culinaria ottomana in Albania.</p>
+                    <p>La ricetta tradizionale prevede l'uso di pasta fillo sottile e croccante, farcita con ingredienti freschi e spezie locali, cotta nel forno fino a raggiungere una doratura perfetta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
