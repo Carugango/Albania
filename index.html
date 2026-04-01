@@ -204,6 +204,131 @@
         .riviera-description p {
             margin-bottom: 15px;
         }
+
+        .geography-section {
+            background: linear-gradient(135deg, #e41e3f 0%, #000080 100%);
+            padding: 60px 40px;
+            color: white;
+            min-height: auto;
+        }
+
+        .geography-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .geography-section h2 {
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .map-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .map-image {
+            text-align: center;
+        }
+
+        .map-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .geography-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .geography-info p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .map-wrapper {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        .music-section {
+            background: linear-gradient(135deg, #000080 0%, #e41e3f 100%);
+            padding: 60px 40px;
+            color: white;
+            min-height: auto;
+        }
+
+        .music-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .music-section h2 {
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .music-player {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .music-player h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .music-player p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .music-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .music-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .music-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .music-card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -286,4 +411,53 @@
             </div>
         </div>
     </div>
-</html>
+
+    <!-- Geography Section -->
+    <div class="geography-section">
+        <div class="geography-container">
+            <h2>🗺️ Posizione Geografica</h2>
+            <div class="map-wrapper">
+                <div class="map-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Albania_location_map.svg/800px-Albania_location_map.svg.png" alt="Mappa geografica dell'Albania e dei paesi circostanti">
+                </div>
+                <div class="geography-info">
+                    <h3>Dove si trova l'Albania?</h3>
+                    <p>L'Albania è situata nella penisola balcanica dell'Europa sud-orientale, bordata dal Mar Adriatico e dal Mar Ionio a ovest.</p>
+                    <p><strong>Confini:</strong> A nord e ad est confina con il Kosovo e la Macedonia del Nord, a sud con la Grecia, e a nord-est con la Serbia e il Montenegro.</p>
+                    <p><strong>Area Totale:</strong> Circa 28.748 km² con una costa di 427 km caratterizzata da spiagge sabbiose e scogliere rocciose.</p>
+                    <p>La posizione strategica tra Oriente e Occidente ha reso l'Albania un crocevia importante di culture, commerci e influenze storiche per millenni.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <div class="music-section">
+        <div class="music-container">
+            <h2>🎵 Musica Tradizionale Albanese</h2>
+            
+            <div class="music-player">
+                <h3>♪ "Margjja e Premtuar" - Canzone Popolare Albanese</h3>
+                <p>Una delle canzoni tradizionali più amate dell'Albania. "Margjja e Premtuar" (Il Percorso Promesso) è una canzone folk che raconta storie di amore, passione e tradizione albanese. Ascolta questa bellissima melodia che riflette l'anima della cultura albanese.</p>
+                <iframe width="100%" height="80" src="https://www.youtube.com/embed/WLypC3AZJ54" title="Margjja e Premtuar - Canzone Popolare Albanese" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 5px;"></iframe>
+            </div>
+
+            <div class="music-info">
+                <div class="music-card">
+                    <h4>🎸 Musica Popolare</h4>
+                    <p>La musica tradizionale albanese è caratterizzata da strumenti come la çifteli (liuto), daira (tamburo) e deftera (flauto).</p>
+                </div>
+
+                <div class="music-card">
+                    <h4>🎭 Danze Folkloristiche</h4>
+                    <p>L'Albania è famosa per le sue danze tradizionali come la "Vallja e Shqipes" (Danza dell'Albania), molto popolare nelle celebrazioni.</p>
+                </div>
+
+                <div class="music-card">
+                    <h4>🎼 Eredità Culturale</h4>
+                    <p>La musica e le danze albanesi riflettono secoli di storia, dal periodo illiro alle influenze ottomane e balcaniche moderne.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
